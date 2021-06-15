@@ -8,7 +8,7 @@ public class BohrModel : MonoBehaviour
     private bool bohrModelIsActive;
 
     public GameObject subshellPrefab;
-    public List<Subshell> subshells = new List<Subshell>();
+    public List<BohrSubshell> subshells = new List<BohrSubshell>();
 
     private Atom atom;
     private int pqn;
@@ -29,7 +29,7 @@ public class BohrModel : MonoBehaviour
 
     private void clearSubshells()
     {
-        foreach (Subshell subshell in subshells)
+        foreach (BohrSubshell subshell in subshells)
             Destroy(subshell.gameObject);
 
         subshells.Clear();
@@ -49,7 +49,7 @@ public class BohrModel : MonoBehaviour
             int n = i + 1;  //Convert index in array to pqn
 
             GameObject _s = Instantiate(subshellPrefab, BohrModelParent.transform);
-            Subshell s = _s.GetComponent<Subshell>();
+            BohrSubshell s = _s.GetComponent<BohrSubshell>();
 
             subshells.Add(s);
 

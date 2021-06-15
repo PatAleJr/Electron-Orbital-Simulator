@@ -67,7 +67,7 @@ public class Orbitals : MonoBehaviour
         GameObject newOrbital = Instantiate(S_Prefab, electronCloudParent.transform);
         orbitals.Add(newOrbital);
 
-        float scale = Subshell.radii[pqn]*2;
+        float scale = BohrSubshell.radii[pqn]*2;
         newOrbital.transform.localScale = new Vector3(scale, scale, scale);
     }
     public void make_P_Orbitals(int pqn)
@@ -86,7 +86,7 @@ public class Orbitals : MonoBehaviour
         orbital.transform.rotation = Quaternion.Euler(0, 0, 90);
         orbitals.Add(orbital);
 
-        float scale = Subshell.radii[pqn]*2;
+        float scale = BohrSubshell.radii[pqn]*2;
         for (int i = startIndex; i < orbitals.Count; i++)
             orbitals[i].transform.localScale = new Vector3(scale, scale, scale);
     }
@@ -113,7 +113,7 @@ public class Orbitals : MonoBehaviour
         orbital = Instantiate(D_Prefab2, electronCloudParent.transform);
         orbitals.Add(orbital);
 
-        float scale = Subshell.radii[pqn]*2;
+        float scale = BohrSubshell.radii[pqn]*2;
         for (int i = startIndex; i < orbitals.Count; i++)
             orbitals[i].transform.localScale = new Vector3(scale, scale, scale);
     }

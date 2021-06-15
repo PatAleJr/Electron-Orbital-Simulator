@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Subshell : MonoBehaviour
+public class BohrSubshell : MonoBehaviour
 {
     public int pqn;
     public int numElectrons;

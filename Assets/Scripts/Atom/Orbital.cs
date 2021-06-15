@@ -16,6 +16,8 @@ public class Orbital : MonoBehaviour
 
     public Color myColor;
 
+    private RealOrbital realOrbital;
+
     public void Start()
     {
         foreach (Transform child in transform)
@@ -25,6 +27,9 @@ public class Orbital : MonoBehaviour
                 renderers.Add(child.GetComponent<MeshRenderer>());
             }
         }
+
+        
+        realOrbital = GetComponent<RealOrbital>();
     }
 
     public void setup(int _pqn, Atom _atom)

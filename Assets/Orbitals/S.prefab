@@ -51,10 +51,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +81,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3573777922098545060
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3573777922098545061}
   - component: {fileID: 668123938438682134}
+  - component: {fileID: 2670700061481346411}
   m_Layer: 8
   m_Name: S
   m_TagString: S
@@ -128,3 +132,22 @@ MonoBehaviour:
   valence: 0
   atom: {fileID: 0}
   type: 
+  myColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &2670700061481346411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3573777922098545060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3cede0fa6092841a011b70be0ef88d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballPrefab: {fileID: 1960273863998914428, guid: 78e9d9cc0ef0be64ba8eb8e2665a67ac,
+    type: 3}
+  length: 1
+  numBalls: 10000
+  spacing: 0
+  Z: 0
