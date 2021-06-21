@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -267,10 +267,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1421009585}
-  - component: {fileID: 1421009584}
   - component: {fileID: 1421009586}
   - component: {fileID: 1421009588}
   - component: {fileID: 1421009587}
+  - component: {fileID: 1421009584}
   m_Layer: 0
   m_Name: Orbital
   m_TagString: Untagged
@@ -287,10 +287,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1421009583}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d3cede0fa6092841a011b70be0ef88d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5140cfccff17c2d4196f192d02f1dad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Z: 0
 --- !u!4 &1421009585
 Transform:
   m_ObjectHideFlags: 0
@@ -317,9 +316,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920a1df01142734419b46bbe5f7b1d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points_Vectors: []
-  totalPoints: 100000
-  diameter: 2
+  totalPoints: 1000000
+  length: 2
+  bohrRadiusPerUnit: 5
 --- !u!23 &1421009587
 MeshRenderer:
   m_ObjectHideFlags: 0
